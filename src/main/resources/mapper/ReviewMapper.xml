@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lcs.beautybackend.mapper.ReviewMapper">
+
+    <resultMap id="BaseResultMap" type="com.lcs.beautybackend.model.entity.Review">
+            <id property="id" column="id" />
+            <result property="appointmentId" column="appointmentId" />
+            <result property="userId" column="userId" />
+            <result property="artistId" column="artistId" />
+            <result property="rating" column="rating" />
+            <result property="content" column="content" />
+            <result property="images" column="images" />
+            <result property="reply" column="reply" />
+            <result property="replyTime" column="replyTime" />
+            <result property="status" column="status" />
+            <result property="createTime" column="createTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="isDeleted" column="isDeleted" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,appointmentId,userId,artistId,rating,content,
+        images,reply,replyTime,status,createTime,
+        updateTime,isDeleted
+    </sql>
+</mapper>

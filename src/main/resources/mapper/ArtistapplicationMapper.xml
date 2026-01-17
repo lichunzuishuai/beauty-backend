@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lcs.beautybackend.mapper.ArtistapplicationMapper">
+
+    <resultMap id="BaseResultMap" type="com.lcs.beautybackend.model.entity.Artistapplication">
+            <id property="id" column="id" />
+            <result property="userId" column="userId" />
+            <result property="realName" column="realName" />
+            <result property="idCard" column="idCard" />
+            <result property="phone" column="phone" />
+            <result property="experienceYears" column="experienceYears" />
+            <result property="specialties" column="specialties" />
+            <result property="certificateImages" column="certificateImages" />
+            <result property="portfolioImages" column="portfolioImages" />
+            <result property="introduction" column="introduction" />
+            <result property="status" column="status" />
+            <result property="rejectReason" column="rejectReason" />
+            <result property="reviewedBy" column="reviewedBy" />
+            <result property="reviewedAt" column="reviewedAt" />
+            <result property="createTime" column="createTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="isDeleted" column="isDeleted" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,userId,realName,idCard,phone,experienceYears,
+        specialties,certificateImages,portfolioImages,introduction,status,
+        rejectReason,reviewedBy,reviewedAt,createTime,updateTime,
+        isDeleted
+    </sql>
+</mapper>

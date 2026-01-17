@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lcs.beautybackend.mapper.AppointmentMapper">
+
+    <resultMap id="BaseResultMap" type="com.lcs.beautybackend.model.entity.Appointment">
+            <id property="id" column="id" />
+            <result property="orderNo" column="orderNo" />
+            <result property="userId" column="userId" />
+            <result property="artistId" column="artistId" />
+            <result property="serviceId" column="serviceId" />
+            <result property="appointmentDate" column="appointmentDate" />
+            <result property="appointmentTime" column="appointmentTime" />
+            <result property="address" column="address" />
+            <result property="contactName" column="contactName" />
+            <result property="contactPhone" column="contactPhone" />
+            <result property="remark" column="remark" />
+            <result property="totalAmount" column="totalAmount" />
+            <result property="status" column="status" />
+            <result property="cancelReason" column="cancelReason" />
+            <result property="createTime" column="createTime" />
+            <result property="updateTime" column="updateTime" />
+            <result property="isDeleted" column="isDeleted" />
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,orderNo,userId,artistId,serviceId,appointmentDate,
+        appointmentTime,address,contactName,contactPhone,remark,
+        totalAmount,status,cancelReason,createTime,updateTime,
+        isDeleted
+    </sql>
+</mapper>
